@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+
+html,body{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: #EFF1FA;
+    font-weight: bold;
+}
+
+.container{ 
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;     
+    
+}
+
+#msgDigitada{ 
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;  
+    width: 70%;
+    height: 100%;;
+}
+
+#area-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 94%;   
+    
+}
+
+#area-texto label{
+    color: #0a3871;
+    font-size: 2em;
+    width: 50%;
+    padding: .5em;
+    text-align: center;
+    
+}
+
+#area-texto textarea{
+    background: #EFF1FA;
+    position: relative;
+    width: 95%;        
+    height: 85%;
+    border: none; 
+    margin: auto;   
+}
+
+#msgCodificada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-radius: 2em;   
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    background: white;
+}
+
+.msgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;    
+    height: 50%;
+    width: 100%;  
+    padding:.5em 0;
+    margin:.2em 0;
+}
+
+.msgContainer img{
+    margin-top: 3em;
+    height: 100%;
+    width: 100%;
+}
+
+.msgContainer h3{
+    height: 30%;
+    text-align: center;
+    font-size: 2.5em;
+    
+}
+
+.msgContainer label{
+    opacity: 0.5;
+    text-align: center;
+}
+
+#botoes{  
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    width:85%;
+    margin: auto;   
+}
+
+#botoes p{   
+    width: 70%; 
+    margin-top: 0;
+    text-align: start;
+    opacity: 0.4;
+    font-size: 0.4;
+}
+
+#botoes p::before{
+    content: url(../img/ponto-de-exclamacao-em-um-circulo\ \(3\).png);
+    vertical-align: baseline;
+}
+
+#botoes div{
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 90%;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+button{
+    background: #EFF1FA;
+    width: 300px;
+    height: 4em;
+    border-radius: 2em;
+    border:2px solid #0a3871;
+    color: #0a3871;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ #btnCriptar{
+    border: none;
+    color: #EFF1FA;
+    background-color: #0a3871;
+}
+
+#btnCopiar{
+    display: none;
+    width: 180px;
+    height: 3em;
+}
