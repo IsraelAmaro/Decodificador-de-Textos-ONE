@@ -92,6 +92,10 @@ body{
     text-align: center;
 }
 
+.msgContainer p{
+    display: none;
+}
+
 #botoes{  
     display: flex; 
     flex-direction: column;
