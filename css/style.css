@@ -1,155 +1,261 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
     background: #EFF1FA;
     font-weight: bold;
 }
 
-.container{ 
+.cabecalho {
+    position: absolute;
+    left: 3%;
+    top: 1%;
+}
+
+.cabecalho h1 {
+    margin-top: 0;
+    font-size: 3em;
+    color: #0a3871;
+    border: 2px solid black;
+}
+
+.container {
     height: 95%;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;     
-    
+    justify-content: space-between;
 }
 
-#msgDigitada{ 
+#msgDigitada {
     display: flex;
-    flex-direction: column;   
-    justify-content: space-between;  
-    width: 70%;
-    height: 100%;;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
 }
 
-#area-texto{
+#area-texto {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 94%;   
-    
+    height: 94%;
 }
 
-#area-texto label{
+#area-texto label {
     color: #0a3871;
     font-size: 2em;
     width: 50%;
     padding: .5em;
+    margin-top: 1em;
     text-align: center;
-    
+
 }
 
-#area-texto textarea{
+#area-texto textarea {
     background: #EFF1FA;
     position: relative;
-    width: 95%;        
+    width: 95%;
     height: 85%;
-    border: none; 
-    margin: auto;   
+    border: none;
+    margin: auto;
 }
 
-#msgCodificada{
+#msgCodificada {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: baseline;
-    border-radius: 2em;   
+    border-radius: 2em;
     width: 25%;
-    height: 100%;
     padding: 10px;
     background: white;
 }
 
-.msgContainer{
+.msgContainer {
     display: flex;
     flex-direction: column;
-    justify-content: start;    
+    justify-content: start;
     height: 50%;
-    width: 100%;  
-    padding:.5em 0;
-    margin:.2em 0;
+    width: 100%;
+    padding: .5em 0;
+    margin: .2em 0;
 }
 
-.msgContainer img{
+.msgContainer img {
     margin-top: 3em;
     height: 100%;
     width: 100%;
 }
 
-.msgContainer h3{
+.msgContainer h3 {
     height: 30%;
     text-align: center;
     font-size: 2.5em;
-    
+
 }
 
-.msgContainer label{
+.msgContainer label {
     opacity: 0.5;
     text-align: center;
 }
 
-.msgContainer p{
+.msgContainer p {
     display: none;
 }
 
-#botoes{  
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    justify-content: space-between;
-    width:85%;
-    margin: auto;   
+#botoes {
+    width: 100%;
+    margin: auto;
 }
 
-#botoes p{   
-    width: 70%; 
+#botoes p {
+    width: 70%;
     margin-top: 0;
     text-align: start;
     opacity: 0.4;
     font-size: 0.4;
 }
 
-#botoes p::before{
+#botoes p::before {
     content: url(../img/ponto-de-exclamacao-em-um-circulo\ \(3\).png);
     vertical-align: baseline;
 }
 
-#botoes div{
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+.dados-desenvolvedor {
     display: flex;
     justify-content: space-evenly;
-    height: 90%;
-    width: 90%;
+    width: 50%;
 }
 
-label:hover{
+
+.rodape img {
+    width: 30px;
+    height: 30px;
+}
+
+.rodape p {
+    opacity: .5;
+    color: blue;
+}
+
+label:hover {
     cursor: pointer;
 }
 
-button{
+button {
     background: #EFF1FA;
-    width: 300px;
-    height: 4em;
+    width: 40%;
+    height: 3.2em;
     border-radius: 2em;
-    border:2px solid #0a3871;
+    border: 2px solid #0a3871;
     color: #0a3871;
+    margin: 5px 1.5em;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
- #btnCriptar{
+#btnCriptar {
     border: none;
     color: #EFF1FA;
     background-color: #0a3871;
 }
 
-#btnCopiar{
+#btnCopiar {
     display: none;
     width: 180px;
     height: 3em;
+}
+
+@media screen and (min-width:481px) and (max-width:720px) {
+
+    .container,
+    #msgCodificada,
+    .rodape {
+        flex-direction: column;
+        width: 95%;
+        margin: 2em auto;
+        padding: 2em auto;
+    }
+
+    #msgDigitada {
+        justify-content: space-between;
+        width: 100%;
+        height: 80%;
+        margin: auto;
+    }
+
+    #botoes {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        width: 160px;
+        height: 3em;
+        margin: 5px 2em;
+    }
+
+    #img-codificacao {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 480px) {
+
+    .container,
+    #msgCodificada,
+    .rodape {
+        flex-direction: column;
+        width: 95%;
+        margin: 1em auto;
+        padding: auto;
+    }
+
+    #msgCodificada {
+        height: 30%;
+    }
+
+    #msgDigitada {
+        justify-content: space-between;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+
+    #botoes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    #img-codificacao {
+        display: none;
+    }
+
+    .msgContainer h3 {
+        height: 50%;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
 }

@@ -10,44 +10,54 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="" id="img-logo" alt="" title="logo">
-        </div>
+    <header class="cabecalho">
+        <img src="../img/logo-pagina.png" alt="">
     </header>
     <main class="container">
-        <div id="msgDigitada">
-            <div id="area-texto">
-                <label for="mensagem-dig">Digite seu texto</label>
-                <textarea name="mensagem-dig" id="mensagem-dig"
-                data-texto required></textarea>
 
-            </div>
-            <div id="botoes">
-                <p> apenas letras minusculas e sem acentos.</p>
-                <div >
+            <div id="msgDigitada">
+                <div id="area-texto">
+                    <label for="mensagem-dig">Digite seu texto</label>
+                    <textarea name="mensagem-dig" id="mensagem-dig" data-texto required                        
+                        title="Digite apenas letras minusculas e sem acentos"></textarea>
+
+                </div>
+                <div id="botoes">
+                    <p> apenas letras minusculas e sem acentos.</p>
+
                     <button id="btnCriptar" data-botao> Criptografar</button>
                     <button id="btnDescriptar" data-botao>Descriptografar</button>
                 </div>
             </div>
 
-        </div>
         <div id="msgCodificada">
             <div class="msgContainer" id="img-codificacao" data-display>
-                <img src="../img/img-codificacao.svg" id="img-codi" alt="" title="imagem area de codificação">
-                
+                <img class="img" src="../img/img-codificacao.svg" id="img-codi" alt="imagem-ilustrativa"
+                    title="imagem area de codificação">
+
             </div>
             <div class="msgContainer" id="area-codificacao">
-                <h3 id="title-cod" data-display>Nenhuma mensagem encontrada.</h3>                
-                <label for="mensagem-dig" data-display>Digite um texto que você deseja criptografar ou descriptografar.</label> 
-                <p id="mensagemCripto"></p>               
+                <h3 id="title-cod" data-display>Nenhuma mensagem encontrada.</h3>
+                <label for="mensagem-dig" data-display>Digite um texto que você deseja criptografar ou
+                    descriptografar.</label>
+                <p id="mensagemCripto"></p>
             </div>
-            <div >
-                <button id="btnCopiar" class="botao">Copiar</button>                
+            <div>
+                <button id="btnCopiar" class="botao" data-botao="">Copiar</button>
             </div>
         </div>
-
     </main>
+    <footer class="rodape">
+        <div class="dados-desenvolvedor">
+            <p>devisraelamaro@gmail.com / contato : (83) 99826-3738</p>
+
+        </div>
+        <div class="dados-desenvolvedor">
+            <a href="https://github.com/IsraelAmaro"><img src="../img/logo-github.png" alt="logo-gitHub"></a>
+            <a href="https://www.linkedin.com/in/israel-vaz-amaro/"><img src="../img/logo-linkedIn.png"
+                    alt="logo-linkedIn"></a>
+        </div>
+    </footer>
 
     <script src="../script.js"></script>
 </body>
